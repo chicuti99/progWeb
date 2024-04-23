@@ -81,28 +81,27 @@
 
                             <p:outputLabel for="registrationField" value="#{msgsCore['manageStudents.field.registration']}" />
                             <h:panelGroup id="registrationGroup">
-                                <p:message id="registrationMsgs" for="acronymField" />
+                                <p:message for="registrationField" />
                                 <p:inputText id="registrationField" value="#{manageStudentsController.selectedEntity.registration}" required="true">
-                                    <p:ajax event="blur" process="@this" update="registrationMsgs" />
+                                    <p:ajax event="blur" process="@this" update="registrationGroup" />
                                 </p:inputText>
                             </h:panelGroup>
 
                             <p:outputLabel for="nameField" value="#{msgsCore['manageStudents.field.name']}" />
                             <h:panelGroup id="nameGroup">
-                                <p:message id="nameMsgs" for="nameField" />
+                                <p:message for="nameField" />
                                 <p:inputText id="nameField" value="#{manageStudentsController.selectedEntity.name}" required="true">
-                                    <p:ajax event="blur" process="@this" update="nameMsgs" />
+                                    <p:ajax event="blur" process="@this" update="nameGroup" />
                                 </p:inputText>
                             </h:panelGroup>
 
                             <p:outputLabel for="courseField" value="#{msgsCore['manageStudents.field.course']}" />
                             <h:panelGroup id="courseGroup">
-                                <p:message id="courseMsgs" for="courseField" />
-                                <p:inputText id="couseField" value="#{manageStudentsController.selectedEntity.couse}" required="true">
-                                    <p:ajax event="blur" process="@this" update="couseMsgs" />
+                                <p:message for="courseField" />
+                                <p:inputText id="courseField" value="#{manageStudentsController.selectedEntity.course}" required="true">
+                                    <p:ajax event="blur" process="@this" update="courseGroup" />
                                 </p:inputText>
                             </h:panelGroup>
-
                         </p:panelGrid>
                     </p:outputPanel>
                 </p:outputPanel>

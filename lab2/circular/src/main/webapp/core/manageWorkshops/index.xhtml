@@ -88,6 +88,7 @@
                 <p:outputPanel id="manage-entity-content">
                     <p:outputPanel rendered="#{not empty manageWorkshopsController.selectedEntity}">
                         <p:panelGrid columns="2" cellpadding="5" layout="grid" styleClass="ui-fluid card" columnClasses="ui-grid-col-4,ui-grid-col-8">
+
                             <p:outputLabel for="acronymField" value="#{msgsCore['manageWorkshops.field.acronym']}" />
                             <h:panelGroup id="acronymGroup">
                                 <p:message for="acronymField" />
