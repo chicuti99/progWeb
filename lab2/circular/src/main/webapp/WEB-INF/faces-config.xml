@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-facesconfig_3_0.xsd" version="3.0">
+    <application>
+        <!-- Defines the resource bundle that contains the standard JSF messages
+            (overriding the ones provided). -->
+        <message-bundle>br.ufes.inf.labes.circular.faces</message-bundle>
+
+        <!-- Loads resource bundles for i18n messages and assigns names to them. -->
+        <resource-bundle>
+            <base-name>br.ufes.inf.labes.circular.messages</base-name>
+            <var>msgs</var>
+        </resource-bundle>
+
+        <resource-bundle>
+            <base-name>br.ufes.inf.labes.circular.core.view.messages</base-name>
+            <var>msgsCore</var>
+        </resource-bundle>
+    </application>
+</faces-config>
